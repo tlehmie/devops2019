@@ -7,25 +7,21 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        pipeline {
-    agent any
 
     stages {
-        stage('Hello') {
+        stage('build') {
             steps {
                 echo 'Hello World'
             }
         }
-pipeline {
-    agent any
 
     stages {
-        stage('Hello') {
+        stage('test') {
             steps {
                 echo 'Hello World'
             }
         }
-    }
+    }      
 }
 
 
